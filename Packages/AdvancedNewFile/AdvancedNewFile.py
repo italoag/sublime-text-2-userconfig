@@ -23,9 +23,7 @@ SETTINGS = [
     "auto_refresh_sidebar",
     "completion_type",
     "complete_single_entry",
-    "use_folder_name",
-    "relative_from_current",
-    "default_extension"
+    "use_folder_name"
 ]
 VIEW_NAME = "AdvancedNewFileCreation"
 WIN_ROOT_REGEX = r"[a-zA-Z]:(/|\\)"
@@ -141,30 +139,10 @@ class AdvancedNewFileCommand(sublime_plugin.WindowCommand):
                 if parts[1] != "":
                     path_list.append(parts[1])
                 path = self.top_level_split_char.join(path_list)
-            elif re.match(r"^/", path):
-                path_offset = 1
-                if PLATFORM == "windows":
-                    match = re.match(r"^/([a-zA-Z])/", path)
-                    if match:
-                        root = "%s:\\" % match.group(1)
-                        path_offset = 3
-                    else:
-                        root, _ = os.path.splitdrive(self.view.file_name())
-                        root += "\\"
-                else:
-                    root = "/"
-                path = path[path_offset:]
             # Parse if tilde used
             elif re.match(HOME_REGEX, path) and root == None:
                 root = os.path.expanduser("~")
                 path = path[2:]
-            elif re.match(r"^\.{1,2}[/\\]", path) and self.settings.get("relative_from_current", False):
-                path_index = 2
-                root = os.path.dirname(self.view.file_name())
-                if re.match(r"^\.{2}[/\\]", path):
-                    root = os.path.dirname(root)
-                    path_index = 3
-                path = path[path_index:]
 
             # Default
             if root == None:
@@ -177,8 +155,6 @@ class AdvancedNewFileCommand(sublime_plugin.WindowCommand):
                 root = root or self.window.folders()[folder_index]
         except IndexError:
             root = os.path.expanduser("~")
-
-
         return root, path
 
     def translate_alias(self, path):
@@ -247,8 +223,7 @@ class AdvancedNewFileCommand(sublime_plugin.WindowCommand):
     def update_filename_input(self, path_in):
         if self.settings.get("completion_type") == "windows":
             if "prev_text" in dir(self) and self.prev_text != path_in:
-                if self.view is not None:
-                    self.view.erase_status("AdvancedNewFile2")
+                self.view.erase_status("AdvancedNewFile2")
         if path_in.endswith("\t"):
             path_in = path_in.replace("\t", "")
             if self.settings.get("completion_type") == "windows":
@@ -258,7 +233,7 @@ class AdvancedNewFileCommand(sublime_plugin.WindowCommand):
 
         base, path = self.split_path(path_in)
 
-        creation_path = self.generate_creation_path(base, path, True)
+        creation_path = self.generate_creation_path(base, path)
         if self.show_path:
             if self.view != None:
                 self.view.set_status("AdvancedNewFile", "Creating file at %s " % \
@@ -280,10 +255,9 @@ class AdvancedNewFileCommand(sublime_plugin.WindowCommand):
                 alias_list += self.generate_alias_auto_complete(filename)
                 alias_list += self.generate_project_auto_complete(filename)
         base, path = self.split_path(path_in)
-        full_path = self.generate_creation_path(base, path)
+        directory, filename = os.path.split(path)
 
-        directory, filename = os.path.split(full_path)
-
+        directory = os.path.join(base, directory)
         if os.path.isdir(directory):
             for d in os.listdir(directory):
                 full_path = os.path.join(directory, d)
@@ -344,11 +318,10 @@ class AdvancedNewFileCommand(sublime_plugin.WindowCommand):
 
         if len(self.completion_list) > 1:
             if first_token:
-                if self.view is not None:
-                    if self.completion_list[self.offset] in self.alias_list:
-                        self.view.set_status("AdvancedNewFile2", "Alias Completion")
-                    elif self.completion_list[self.offset] in self.dir_list:
-                        self.view.set_status("AdvancedNewFile2", "Directory Completion")
+                if self.completion_list[self.offset] in self.alias_list:
+                    self.view.set_status("AdvancedNewFile2", "Alias Completion")
+                elif self.completion_list[self.offset] in self.dir_list:
+                    self.view.set_status("AdvancedNewFile2", "Directory Completion")
             self.prev_text = new_content
         else:
             self.prev_text = None
@@ -416,7 +389,7 @@ class AdvancedNewFileCommand(sublime_plugin.WindowCommand):
         return compare_entry.startswith(compare_base)
 
 
-    def generate_creation_path(self, base, path, append_extension=False):
+    def generate_creation_path(self, base, path):
         if PLATFORM == "windows":
             if not re.match(WIN_ROOT_REGEX, base):
                 return base + self.top_level_split_char + path
@@ -424,23 +397,7 @@ class AdvancedNewFileCommand(sublime_plugin.WindowCommand):
             if not re.match(NIX_ROOT_REGEX, base):
                 return base + self.top_level_split_char + path
 
-        tokens = re.split(r"[/\\]", base) + re.split(r"[/\\]", path)
-        if tokens[0] == "":
-            tokens[0] = "/"
-        if PLATFORM == "windows":
-            tokens[0] = base[0:3]
-
-        full_path = os.path.abspath(os.path.join(*tokens))
-        if re.search(r"[/\\]$", path) or len(path) == 0:
-            full_path += os.path.sep
-        elif re.search(r"\.", tokens[-1]):
-            if re.search(r"\.$", tokens[-1]):
-                full_path += "."
-        elif append_extension:
-            filename = os.path.basename(full_path)
-            if not os.path.exists(full_path):
-                full_path += self.settings.get("default_extension", "")
-        return full_path
+        return os.path.abspath(os.path.join(base, path))
 
     def entered_filename(self, filename):
         # Check if valid root specified for windows.
@@ -453,7 +410,7 @@ class AdvancedNewFileCommand(sublime_plugin.WindowCommand):
                     return
 
         base, path = self.split_path(filename)
-        file_path = self.generate_creation_path(base, path, True)
+        file_path = os.path.join(base, path)
         # Check for invalid alias specified.
         if self.top_level_split_char in filename and \
             not (PLATFORM == "windows" and re.match(WIN_ROOT_REGEX, base)) and \
@@ -508,8 +465,7 @@ class AdvancedNewFileCommand(sublime_plugin.WindowCommand):
                 init_list.append(temp_path)
                 temp_path = os.path.dirname(temp_path)
         try:
-            if not os.path.exists(path):
-                os.makedirs(path)
+            os.makedirs(path)
         except OSError as ex:
             if ex.errno != errno.EEXIST:
                 raise

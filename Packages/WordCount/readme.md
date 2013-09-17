@@ -60,4 +60,3 @@ Install this repository automatically via "Package Control" http://wbond.net/sub
  - Antony Male
  - Alex Galonsky
  - RikkiMongoose
- - ChrisJefferson

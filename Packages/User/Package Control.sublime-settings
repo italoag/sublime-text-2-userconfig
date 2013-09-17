@@ -4,16 +4,19 @@
 	"installed_packages":
 	[
 		"AdvancedNewFile",
+		"ApacheConf.tmLanguage",
 		"ApplySyntax",
 		"Autoprefixer",
 		"BufferScroll",
 		"ChangeQuotes",
+		"CodeFormatter",
 		"ColorPicker",
 		"Emmet",
 		"Emmet Css Snippets",
 		"GitGutter",
 		"Handlebars",
 		"Jasmine",
+		"MarkdownEditing",
 		"Package Control",
 		"RSpec (snippets and syntax)",
 		"RspecToggle",
@@ -22,6 +25,7 @@
 		"SideBarEnhancements",
 		"sublimelint",
 		"Theme - Soda",
-		"WordCount"
+		"WordCount",
+		"yUML"
 	]
 }

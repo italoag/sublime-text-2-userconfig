@@ -4,7 +4,6 @@ import os
 import re
 import imp
 import sys
-import warnings
 
 DEFAULT_SETTINGS = \
 '''
@@ -44,11 +43,10 @@ class ApplySyntaxCommand(sublime_plugin.EventListener):
     def __init__(self):
         self.first_line = None
         self.file_name = None
-        self.entire_file = None
         self.view = None
         self.syntaxes = []
         self.plugin_name = 'ApplySyntax'
-        self.plugin_dir = os.path.join(sublime.packages_path(), self.plugin_name)
+        self.plugin_dir = "Packages/%s" % self.plugin_name
         self.settings_file = self.plugin_name + '.sublime-settings'
         self.reraise_exceptions = False
 
@@ -85,16 +83,9 @@ class ApplySyntaxCommand(sublime_plugin.EventListener):
     def reset_cache_variables(self, view):
         self.view = view
         self.file_name = view.file_name()
-        self.first_line = None # we read the first line only when needed
-        self.entire_file = None # we read the contents of the entire file only when needed
+        self.first_line = view.substr(view.line(0))
         self.syntaxes = []
         self.reraise_exceptions = False
-
-    def fetch_first_line(self):
-        self.first_line = self.view.substr(self.view.line(0)) # load the first line only when needed
-
-    def fetch_entire_file(self):
-        self.entire_file = self.view.substr(sublime.Region(0, self.view.size())) # load file only when needed
 
     def set_syntax(self, name):
         # the default settings file uses / to separate the syntax name parts, but if the user
@@ -110,18 +101,18 @@ class ApplySyntaxCommand(sublime_plugin.EventListener):
             path = name
 
         file_name = name + '.tmLanguage'
-        new_syntax = sublime_format_path(os.path.join("Packages", path, file_name))
-        file_path = os.path.join(sublime.packages_path(), path, file_name)
+        new_syntax = sublime_format_path('/'.join(['Packages', path, file_name]))
 
         current_syntax = self.view.settings().get('syntax')
 
         # only set the syntax if it's different
         if new_syntax != current_syntax:
             # let's make sure it exists first!
-            if os.path.exists(file_path):
+            try:
+                sublime.load_resource(new_syntax)
                 self.view.set_syntax_file(new_syntax)
                 log('Syntax set to ' + name + ' using ' + new_syntax)
-            else:
+            except:
                 log('Syntax file for ' + name + ' does not exist at ' + new_syntax)
 
     def load_syntaxes(self):
@@ -170,18 +161,11 @@ class ApplySyntaxCommand(sublime_plugin.EventListener):
 
     def get_function(self, path_to_file, function_name):
         try:
-            path_name = sublime_format_path(path_to_file.replace(sublime.packages_path(), ''))
-            module_name = os.path.splitext(path_name)[0].replace('/', '.')
-            with warnings.catch_warnings(record=True) as w:
-                # Ignore warnings about plugin folder not being a python package
-                warnings.simplefilter("always")
-                module = imp.new_module(module_name)
-                w = filter(lambda i: issubclass(i.category, UserWarning), w)
-                sys.modules[module_name] = module
-                with open(path_to_file, "r") as f:
-                    source = f.read()
-                self.execute_function(source, module_name)
-
+            path_name = sublime_format_path(path_to_file)
+            module_name = os.path.splitext(path_name)[0].replace('/', '.').replace('Packages/', '', 1)
+            module = imp.new_module(module_name)
+            sys.modules[module_name] = module
+            exec(compile(sublime.load_resource(path_name), module_name, 'exec'), sys.modules[module_name].__dict__)
             function = getattr(module, function_name)
         except:
             if self.reraise_exceptions:
@@ -190,9 +174,6 @@ class ApplySyntaxCommand(sublime_plugin.EventListener):
                 function = None
 
         return function
-
-    def execute_function(self, source, module_name):
-        exec(compile(source, module_name, 'exec'), sys.modules[module_name].__dict__)
 
     def function_matches(self, rule):
         function = rule.get("function")
@@ -204,8 +185,6 @@ class ApplySyntaxCommand(sublime_plugin.EventListener):
 
         if re.match(r"^Packages(?:\\|/)", path_to_file) is None:
             path_to_file = os.path.join(self.plugin_dir, path_to_file)
-        else:
-            path_to_file = os.path.join(os.path.dirname(sublime.packages_path()), path_to_file)
         function = self.get_function(path_to_file, function_name)
 
         if function is None:
@@ -221,36 +200,20 @@ class ApplySyntaxCommand(sublime_plugin.EventListener):
                 return False
 
     def regexp_matches(self, rule):
-        from_beginning = True # match only from the beginning or anywhere in the string
-
         if "first_line" in rule:
-            if self.first_line is None:
-                self.fetch_first_line()
             subject = self.first_line
             regexp = rule.get("first_line")
         elif "binary" in rule:
-            if self.first_line is None:
-                self.fetch_first_line()
             subject = self.first_line
             regexp = '^#\\!(?:.+)' + rule.get("binary")
         elif "file_name" in rule:
             subject = self.file_name
             regexp = rule.get("file_name")
-        elif "contains" in rule:
-            if self.entire_file is None:
-                self.fetch_entire_file()
-            subject = self.entire_file
-            regexp = rule.get("contains")
-            from_beginning = False # requires us to match anywhere in the file
         else:
             return False
 
         if regexp and subject:
-            if from_beginning:
-                result = re.match(regexp, subject)
-            else:
-                result = re.search(regexp, subject) # matches anywhere, not only from the beginning
-            return result is not None
+            return re.match(regexp, subject) is not None
         else:
             return False
 

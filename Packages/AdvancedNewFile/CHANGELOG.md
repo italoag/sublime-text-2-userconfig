@@ -1,17 +1,4 @@
 # Changelog for AdvancedNewFile
-- 9 September 2013
-    - Bug fix for folder creation.
-    - Bug fix for permission issue.
-    - Add default extension setting.
-
-- 2 September 2013
-    - Add setting to begin all relative paths from current working directory if available.
-
-- 14 August 2013
-    - Prompt completion type for first token when using Windows completion.
-    - Fix bug with path autocompletion.
-    - Fix bug for tab completion with no view.
-
 - 27 July 2013
     - Rewrite autocomplete functionality.
     - Bug Fixes

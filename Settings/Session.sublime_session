@@ -182,9 +182,21 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 79.0,
+				"height": 56.0,
 				"selected_items":
 				[
+					[
+						"install package",
+						"Package Control: Install Package"
+					],
+					[
+						"install ",
+						"Package Control: Install Package"
+					],
+					[
+						"install p",
+						"Package Control: Install Package"
+					],
 					[
 						"fold",
 						"Project: Add Folder"
@@ -260,7 +272,6 @@
 			"groups":
 			[
 				{
-					"selected": 1,
 					"sheets":
 					[
 						{
@@ -349,7 +360,7 @@
 				]
 			},
 			"menu_visible": true,
-			"position": "0,1,0,0,0,49,391,689,871,1600,900",
+			"position": "0,1,0,0,0,0,0,0,0,1600,900",
 			"replace":
 			{
 				"height": 0.0

@@ -13,8 +13,7 @@
   - `each` → `{{#each }}`
   - `with` → `{{#with }}`
   - `par` → `{{> }}` (for partials)
-  - `x-temp` → `<script type="text/x-handlebars-template" data-template-name="$1">` (inline script tag in HTML files using the Ember recommended `data-template-name` attribute)
-  - `x-id` → `<script type="text/x-handlebars-template" id="$1">` (inline script tag in HTML files using the legacy `id` attribute)
+  - `x-temp` → `<script id="$1" type="text/x-handlebars-template">` (inline script tag in HTML files)
 
 ## About Handlebars.js
 
