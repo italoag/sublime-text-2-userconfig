@@ -1,0 +1,27 @@
+{
+	"auto_upgrade_last_run": null,
+	"cache_length": 300,
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"ApplySyntax",
+		"Autoprefixer",
+		"BufferScroll",
+		"ChangeQuotes",
+		"ColorPicker",
+		"Emmet",
+		"Emmet Css Snippets",
+		"GitGutter",
+		"Handlebars",
+		"Jasmine",
+		"Package Control",
+		"RSpec (snippets and syntax)",
+		"RspecToggle",
+		"ScopeAlways",
+		"SCSS",
+		"SideBarEnhancements",
+		"sublimelint",
+		"Theme - Soda",
+		"WordCount"
+	]
+}

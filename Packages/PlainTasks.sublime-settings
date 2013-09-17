@@ -1,0 +1,12 @@
+{
+  "indent_after_task": false,
+	"extensions":
+	[
+		"TODO",
+		"todo",
+		"todolist",
+		"taskpaper",
+		"tasks",
+		"notes"
+	]
+}

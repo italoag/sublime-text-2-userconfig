@@ -1,0 +1,21 @@
+{
+	"extensions":
+	[
+		"xml",
+		"xsd",
+		"xslt",
+		"svg",
+		"plist",
+		"stTheme",
+		"hidden-tmTheme",
+		"hidden-tmLanguage",
+		"tmLanguage",
+		"sublime-snippet",
+		"tmtheme",
+		"sublime-snippet",
+		"tmTheme",
+		"tmTheme",
+		"tmTheme",
+		"tmLanguage"
+	]
+}

@@ -1,0 +1,43 @@
+[
+	{"id": "side-bar-files-open-with",
+		"children":
+		[
+			{
+				"caption": "Mou (Markdown)",
+				"id": "side-bar-files-open-with-mou",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Mou.app",
+									"extensions":".*"
+								}
+			},
+
+			{
+				"caption": "Marked (Markdown)",
+				"id": "side-bar-files-open-with-marked",
+
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Marked.app",
+									"extensions":".*"
+								}
+			},
+
+			{"caption":"-"},
+
+			{
+				"caption": "Photoshop",
+				"id": "side-bar-files-open-with-photoshop",
+				"command": "side_bar_files_open_with",
+				"args": {
+									"paths": [],
+									"application": "Adobe Photoshop CS6.app",
+									"extensions":"gif|png|jpg|jpeg"
+								}
+			}
+		]
+	}
+]
