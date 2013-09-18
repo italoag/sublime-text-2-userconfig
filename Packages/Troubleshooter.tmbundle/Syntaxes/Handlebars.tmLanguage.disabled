@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>hbs</string>
+		<string>hjs</string>
+		<string>handlebars</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>(?x)
+		(&lt;(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)\b.*?&gt;
+		|&lt;!--(?!.*--&gt;)
+		|\{\s*($|\?&gt;\s*$|//|/\*(.*\*/\s*$|(?!.*?\*/)))
+		)</string>
+	<key>foldingStopMarker</key>
+	<string>(?x)
+		(&lt;/(?i:head|body|table|thead|tbody|tfoot|tr|div|select|fieldset|style|script|ul|ol|form|dl)&gt;
+		|^\s*--&gt;
+		|(^|\s)\}
+		)</string>
+	<key>keyEquivalent</key>
+	<string>^~H</string>
+	<key>name</key>
+	<string>Handlebars</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>text.html.basic</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\{\{</string>
+			<key>end</key>
+			<string>\}\}</string>
+			<key>name</key>
+			<string>entity.name.tag.handlebars</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>[#/]\b(if|each|unless|with)\b</string>
+					<key>name</key>
+					<string>keyword.other.handlebars</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>[#/]\b(?!if|each|unless|with)\b[^ \}]+</string>
+					<key>name</key>
+					<string>support.variable</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>support.variable</string>
+						</dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(?!if|each|unless|with)([^ ]+) +([^\}]+)</string>
+				</dict>
+			</array>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.html.handlebars</string>
+	<key>uuid</key>
+	<string>8DA0BCEB-1A82-454E-80D4-E414F6DB8A8D</string>
+</dict>
+</plist>

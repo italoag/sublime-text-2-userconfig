@@ -1,15 +1,16 @@
 {
 	"folder_history":
 	[
+		"/home/italo/workspaces",
 		"/opt/servers/jboss-4.2.3.GA",
 		"/opt/servers/jboss-4.2.3.GA/server",
 		"/opt/servers/jboss-4.2.3.GA/server/default/deploy",
 		"/opt/servers/jboss-4.2.3.GA/server/default/conf"
 	],
-	"last_window_id": 5,
+	"last_window_id": 6,
 	"settings":
 	{
-		"new_window_height": 480.0,
+		"new_window_height": 0.0,
 		"new_window_settings":
 		{
 			"auto_complete":
@@ -18,167 +19,6 @@
 				[
 				]
 			},
-			"build_system": "",
-			"command_palette":
-			{
-				"height": 79.0,
-				"selected_items":
-				[
-					[
-						"fold",
-						"Project: Add Folder"
-					]
-				],
-				"width": 435.0
-			},
-			"console":
-			{
-				"height": 139.0
-			},
-			"distraction_free":
-			{
-				"menu_visible": true,
-				"show_minimap": false,
-				"show_open_files": false,
-				"show_tabs": false,
-				"side_bar_visible": false,
-				"status_bar_visible": false
-			},
-			"file_history":
-			[
-				"/opt/servers/jboss-4.2.3.GA/server/default/conf/jboss-service.xml",
-				"/opt/servers/production/jboss-4.2.3.GA/server/default/conf/jboss-service.xml",
-				"/run/user/italo/gvfs/smb-share:server=shodaime,share=cis-documentos/wrk/Italo.Amorim/catalina.out",
-				"/home/italo/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
-				"/home/italo/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
-				"/home/italo/.config/sublime-text-2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
-				"/home/italo/Documentos/workers.properties"
-			],
-			"find":
-			{
-				"height": 40.0
-			},
-			"find_in_files":
-			{
-				"height": 0.0,
-				"where_history":
-				[
-				]
-			},
-			"find_state":
-			{
-				"case_sensitive": false,
-				"find_history":
-				[
-					"Ajp",
-					"AJP",
-					"useJK",
-					"nao suportado pelo processador",
-					"ERROR ",
-					"ERROR"
-				],
-				"highlight": true,
-				"in_selection": false,
-				"preserve_case": false,
-				"regex": false,
-				"replace_history":
-				[
-				],
-				"reverse": false,
-				"show_context": true,
-				"use_buffer2": true,
-				"whole_word": false,
-				"wrap": true
-			},
-			"incremental_find":
-			{
-				"height": 0.0
-			},
-			"input":
-			{
-				"height": 0.0
-			},
-			"layout":
-			{
-				"cells":
-				[
-					[
-						0,
-						0,
-						1,
-						1
-					]
-				],
-				"cols":
-				[
-					0.0,
-					1.0
-				],
-				"rows":
-				[
-					0.0,
-					1.0
-				]
-			},
-			"menu_visible": true,
-			"replace":
-			{
-				"height": 0.0
-			},
-			"save_all_on_build": true,
-			"select_file":
-			{
-				"height": 0.0,
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"select_project":
-			{
-				"height": 0.0,
-				"selected_items":
-				[
-				],
-				"width": 0.0
-			},
-			"show_minimap": true,
-			"show_open_files": true,
-			"show_tabs": true,
-			"side_bar_visible": true,
-			"side_bar_width": 177.0,
-			"status_bar_visible": true
-		},
-		"new_window_width": 640.0
-	},
-	"windows":
-	[
-		{
-			"auto_complete":
-			{
-				"selected_items":
-				[
-				]
-			},
-			"buffers":
-			[
-				{
-					"file": "/opt/servers/jboss-4.2.3.GA/bin/run.conf",
-					"settings":
-					{
-						"buffer_size": 2092,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/opt/servers/production/jboss-4.2.3.GA/server/default/conf/jboss-service.xml",
-					"settings":
-					{
-						"buffer_size": 37302,
-						"line_ending": "Unix"
-					}
-				}
-			],
 			"build_system": "",
 			"command_palette":
 			{
@@ -263,23 +103,208 @@
 				"whole_word": false,
 				"wrap": true
 			},
+			"incremental_find":
+			{
+				"height": 0.0
+			},
+			"input":
+			{
+				"height": 35.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						1
+					]
+				],
+				"cols":
+				[
+					0.0,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"replace":
+			{
+				"height": 0.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": true,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 263.0,
+			"status_bar_visible": true
+		},
+		"new_window_width": 0.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+				]
+			},
+			"buffers":
+			[
+				{
+					"contents": "package br.com.viverebrasil.framework.db.execution;\n\nimport java.math.BigDecimal;\nimport java.sql.Connection;\nimport java.sql.PreparedStatement;\nimport java.sql.ResultSet;\nimport java.sql.SQLException;\nimport java.sql.Timestamp;\nimport java.util.ArrayList;\nimport java.util.Date;\nimport java.util.HashMap;\nimport java.util.LinkedList;\nimport java.util.List;\nimport java.util.Map;\n\nimport javax.sql.DataSource;\n\nimport br.com.viverebrasil.framework.db.DataAccessFactory;\nimport br.com.viverebrasil.framework.db.ex.VivereDataAccessException;\nimport br.com.viverebrasil.framework.db.query.Query;\nimport br.com.viverebrasil.framework.db.query.QueryParameter;\nimport br.com.viverebrasil.framework.db.types.BigDecimalSQL;\nimport br.com.viverebrasil.framework.logger.LogFactory;\nimport br.com.viverebrasil.framework.logger.MessageLogger;\nimport br.com.viverebrasil.framework.metrics.CompositeStopWatch;\nimport br.com.viverebrasil.framework.metrics.StopWatchFactory;\nimport br.com.viverebrasil.framework.metrics.WatchNames;\nimport br.com.viverebrasil.framework.utils.InsensitiveGetMap;\n\npublic class DataConnection implements QueryExecutor {\n\n	private static final MessageLogger LOG = LogFactory.getInstance(DataConnection.class).getMessageLogger();\n	\n	private Connection connection;\n	private DataSource dataSource;\n	private boolean closeConnection;\n	\n	DataConnection(DataSource dataSource) {\n		if(dataSource == null){\n			throw new VivereDataAccessException(\"Origem de dados não pode ser nula.\");\n		}\n		this.dataSource = dataSource;\n		this.closeConnection = true;\n	}\n\n	DataConnection(Connection connection) {\n		if(connection == null){\n			throw new VivereDataAccessException(\"A conexao não pode ser nula.\");\n		}\n		this.connection = connection;\n		this.closeConnection = false;\n	}\n	\n	public Connection getConnection() {\n		return this.connection;\n	}\n	\n	public ResultSet getResultSet(Query query,\n			Map<String, Object> parametersValues) {\n		return (ResultSet) this.execute(query, parametersValues, 0, 0, 0, ResultType.JDBC_RESULTSET, null, null);\n	}\n	\n	public ResultSetSql execute(Query query,\n			Map<String, Object> parametersValues) {\n		return this.execute(query, parametersValues, 0);\n	}\n	\n	public ResultSetSql execute(Query query,\n			Map<String, Object> parametersValues, int maxRows) {\n		return this.execute(query, parametersValues, 0, 0, maxRows);\n	}\n\n	public ResultSetSql execute(Query query,\n			Map<String, Object> parametersValues, String user, Long orgId) {\n		return this.execute(query, parametersValues, 0, user, orgId);\n	}\n	\n	public ResultSetSql execute(Query query,\n			Map<String, Object> parametersValues, int maxRows, String user, Long orgId) {\n		return (ResultSetSql) this.execute(query, parametersValues, 0, 0, maxRows, ResultType.DISCONECTED_RESULTSET ,user, orgId);\n	}\n	\n	public ResultSetSql execute(Query query,\n			Map<String, Object> parametersValues, int page, int pageSize) {\n		return this.execute(query, parametersValues, page, pageSize, 0);\n	}\n	\n	public ResultSetSql execute(Query query,\n			Map<String, Object> parametersValues, int page, int pageSize, int maxRows) {\n		\n		return (ResultSetSql) this.execute(query, parametersValues, page, pageSize, maxRows, ResultType.DISCONECTED_RESULTSET, null, null);\n	}\n	\n	private Object execute(Query query,\n			Map<String, Object> parametersValues, int page, int pageSize, int maxRows, ResultType resultType, String user, Long orgId) {\n		Connection conn = null;\n		PreparedStatement stmt = null;\n		ResultSet rset = null;\n		Object result = null;\n		CompositeStopWatch detailWatch = StopWatchFactory.getInstance().createStackStopWatch(WatchNames.CALL_STACK);\n		try{\n			detailWatch.start(WatchNames.FRAMEWORK_DAO_EXECUTE);\n			conn = this.fetchConnection();\n			\n			List<QueryExecutionProcess> executionProcess = getQueryExecutionProcess(query);\n			String queryText = null;\n			queryText = query.getTextWithoutNamedBinds();\n			QueryExecutionProcess currentProcess = null;\n			int idx;\n			boolean executeNext = true;\n			if(executionProcess.size() == 0){\n				LOG.info(\"Nao ha um processo de execucao para o acesso [%s].\", query.getQueryId().toString());\n			}else{\n				\n				if ( parametersValues == null) {\n					parametersValues = new HashMap<String, Object>(0);\n				}\n				\n				LOG.debug(\"Preparando para executar o acesso:\\n%s\\nBinds:\\n%s\",\n						query.getText().replace(\"%\", \"%%\"),\n						parametersValues.toString());	\n						\n				// chamando: processQuery\n				StringBuilder processedQuery = new StringBuilder();\n				for(idx = 0; idx < executionProcess.size(); idx++){\n					currentProcess = executionProcess.get(idx);\n					executeNext = currentProcess.processQuery(queryText, processedQuery);\n					queryText = processedQuery.toString();\n					processedQuery.delete(0 , processedQuery.length());\n					\n					if(! executeNext){\n						break;\n					}\n				}\n				processedQuery.trimToSize();\n				processedQuery = null;\n				\n				//Removendo qualquer %s que tenha restado\n				queryText = queryText.replaceAll(\"[\\\\%]{1,}[s]\", \"\");\n				\n				\n				// chamando: processParameters\n				Map<String, Object> parametersOut = new InsensitiveGetMap<Object>(5);\n				for(idx = 0; idx < executionProcess.size(); idx++){\n					currentProcess = executionProcess.get(idx);\n					executeNext = currentProcess.processParameters(parametersValues, query, parametersOut);\n					parametersValues = parametersOut;\n					\n					if(executeNext){\n						parametersOut = new InsensitiveGetMap<Object>(5);\n					}else{\n						break;\n					}\n				}\n\n				// chamando: preExecution\n				for(idx = 0; idx < executionProcess.size(); idx++){\n					currentProcess = executionProcess.get(idx);\n					executeNext = currentProcess.preExecution(query, queryText, parametersValues, conn, user, orgId);\n					if(!executeNext){\n						break;\n					}\n				}				\n				\n			}\n			\n			LOG.debug(\"Executando o acesso:\\n%s\\nBinds:\\n%s\",\n					queryText.replace(\"%\", \"%%\"),\n					parametersValues.toString());	\n			\n			//Executando a query\n			stmt = createStatement(queryText, parametersValues, query, page, pageSize, maxRows, conn);\n			if(query.isUpdate()){\n				try{\n					detailWatch.start(WatchNames.FRAMEWORK_QUERY_EXECUTION);\n					stmt.executeUpdate();\n				}finally{\n					detailWatch.stop(\"QUERYID [\" + query.getQueryId() + \"] \" + queryText);\n				}\n			}else{\n				try{\n					detailWatch.start(WatchNames.FRAMEWORK_QUERY_EXECUTION);\n					rset = stmt.executeQuery();\n				}finally{\n					detailWatch.stop(\"QUERYID [\" + query.getQueryId() + \"] \" + queryText);\n				}\n				\n				if(resultType.equals(ResultType.DISCONECTED_RESULTSET)){\n					ResultSetSqlBuilder builder = DataAccessFactory.getResultSetSqlBuilder();\n					List<DataReader> readers = new LinkedList<DataReader>(executionProcess);\n					result = builder.build(rset, query, conn, readers, page, pageSize);\n				}else{\n					result = rset;\n				}\n			}		\n			\n			// chamando: postExecution\n			for (idx = 0; idx < executionProcess.size(); idx++) {\n				currentProcess = executionProcess.get(idx);\n				executeNext = currentProcess.postExecution(query, queryText, parametersValues, conn, user, orgId);\n				if (!executeNext) {\n					break;\n				}\n			}			\n			\n		} catch (VivereDataAccessException v) {\n			throw v;\n		} catch (Throwable t) {\n			ExceptionHandler eHandler = DataAccessFactory.getExceptionHandler();\n			if ( eHandler == null ) {\n				throw new VivereDataAccessException(\"Erro ao obter dados.\", t);\n			} else {\n				eHandler.handleException(t);\n			}\n		} finally {\n			detailWatch.stop();\n			if(stmt != null && (this.closeConnection || resultType.equals(ResultType.DISCONECTED_RESULTSET))){\n				try {\n					stmt.close();\n				} catch (SQLException e) {\n				}\n			}\n			if(rset != null && (this.closeConnection || resultType.equals(ResultType.DISCONECTED_RESULTSET))){\n				try {\n					rset.close();\n				} catch (SQLException e) {\n				}\n			}\n\n		}\n		return result;\n	}\n\n	private PreparedStatement createStatement(String queryText,\n			Map<String, Object> parametersValues, Query query,  int page, int pageSize, int maxRows, Connection conn) throws SQLException {\n		PreparedStatement statement = null;\n		\n		if ( page > 0 && pageSize > 0 ) {\n			statement = conn.prepareStatement(queryText, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);\n			statement.setFetchSize(pageSize * page);\n		} else {\n			statement = conn.prepareStatement(queryText, ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY);\n			if ( maxRows > 0 ) {\n				statement.setFetchSize(maxRows);\n				statement.setMaxRows(maxRows);\n			} else {\n				statement.setFetchSize(100);\n			}\n		}\n		\n		List<QueryParameter> params = query.getParameters();\n		\n		if(params != null && params.size() > 0){\n			Object value;\n			int index = 0;\n			\n			for(QueryParameter param : params){\n				index++;\n				value = parametersValues.get(param.getName());\n				\n				if (value == null) {\n					statement.setString(index, null);\n				} else if (value instanceof Character) {\n					char code = (Character) value;\n\n					statement.setString(\n							index,\n							code == '\\0' ? null : String\n									.valueOf(new char[] { code }));\n				} else if (value instanceof String) {\n					String text = (String) value;\n\n					statement.setString(index, ((text.length() == 1) && (text\n							.charAt(0) == '\\0')) ? null : text);\n				} else if (value instanceof Timestamp) {\n					statement.setTimestamp(index, (Timestamp) value);\n				} else if (value instanceof Date) {\n					long time = ((Date) value).getTime();\n					statement.setDate(index, new java.sql.Date(time));\n				} else if (value instanceof BigDecimal) {\n					statement.setBigDecimal(index,\n							BigDecimalSQL.newInstance((BigDecimal) value));\n				} else if (value instanceof Long) {\n					statement.setLong(index, (Long) value);\n				} else if (value instanceof Double) {\n					statement.setBigDecimal(index,\n							BigDecimalSQL.newInstance((Double) value));\n				} else if (value instanceof Number) {\n					statement.setBigDecimal(index,\n							BigDecimalSQL.newInstance((Number) value));\n				} else if (value instanceof Boolean) {\n					statement.setBoolean(index, (Boolean) value);\n				} else {\n					try {\n						statement.setObject(index, value);\n					} catch (Throwable _throwable) {\n						_throwable.printStackTrace();\n					}\n				}\n\n			}\n		}\n		\n		return statement;\n	}\n\n	private List<QueryExecutionProcess> getQueryExecutionProcess(Query query) {\n\n		List<QueryExecutionProcess> standardProcess = DataAccessFactory.getQueryExecutionProcessChain();\n		List<QueryExecutionProcess> queryPreProcess = query.getPreQueryExecutionProcess();\n		List<QueryExecutionProcess> queryPostProcess = query.getPostQueryExecutionProcess();\n		List<QueryExecutionProcess> fullProcess = null;\n		\n		if ((queryPreProcess != null && queryPreProcess.size() > 0)\n				|| (queryPostProcess != null && queryPostProcess.size() > 0)) {\n			int size = standardProcess.size() + queryPreProcess.size() + queryPostProcess.size();\n			fullProcess = new ArrayList<QueryExecutionProcess>(size);\n			fullProcess.addAll(queryPreProcess);\n			fullProcess.addAll(standardProcess);\n			fullProcess.addAll(queryPostProcess);\n			\n		}else{\n			fullProcess = new ArrayList<QueryExecutionProcess>(standardProcess);\n		}\n		\n		return fullProcess;\n	}\n\n	private Connection fetchConnection(){\n		if(this.connection == null){\n			try {\n				return this.dataSource.getConnection();\n			} catch (SQLException e) {\n				throw new VivereDataAccessException(\"Erro ao obter conexão com o banco de dados.\", e);\n			}\n		}else{\n			return this.connection;\n		}\n	}\n\n	public void close() {\n		if (this.connection != null) {\n			if (this.closeConnection) {\n				try {\n					this.connection.close();\n				} catch (SQLException e) {\n				}finally{\n					this.connection = null;\n				}\n			}\n		}\n	}\n	\n	private enum ResultType{\n		DISCONECTED_RESULTSET, JDBC_RESULTSET;\n	}\n\n}\n",
+					"file": "/home/italo/workspaces/snippets/DataConnection.java",
+					"file_size": 11667,
+					"file_write_time": 1377712706000000,
+					"settings":
+					{
+						"buffer_size": 11664,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/italo/workspaces/snippets/dto-config.xml",
+					"settings":
+					{
+						"buffer_size": 624,
+						"line_ending": "Unix"
+					}
+				},
+				{
+					"file": "/home/italo/workspaces/vivere/vivere-tools.teste/src/main/java/com/viverebrasil/applications/services/login/UserPrincipal.java",
+					"settings":
+					{
+						"buffer_size": 691,
+						"line_ending": "Unix"
+					}
+				}
+			],
+			"build_system": "",
+			"command_palette":
+			{
+				"height": 375.0,
+				"selected_items":
+				[
+					[
+						"install ",
+						"Package Control: Install Package"
+					],
+					[
+						"install package",
+						"Package Control: Install Package"
+					],
+					[
+						"install p",
+						"Package Control: Install Package"
+					],
+					[
+						"fold",
+						"Project: Add Folder"
+					]
+				],
+				"width": 435.0
+			},
+			"console":
+			{
+				"height": 139.0
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/opt/servers/jboss-4.2.3.GA/server/default/conf/jboss-service.xml",
+				"/opt/servers/production/jboss-4.2.3.GA/server/default/conf/jboss-service.xml",
+				"/run/user/italo/gvfs/smb-share:server=shodaime,share=cis-documentos/wrk/Italo.Amorim/catalina.out",
+				"/home/italo/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+				"/home/italo/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+				"/home/italo/.config/sublime-text-2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+				"/home/italo/Documentos/workers.properties"
+			],
+			"find":
+			{
+				"height": 40.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"Ajp",
+					"AJP",
+					"useJK",
+					"nao suportado pelo processador",
+					"ERROR ",
+					"ERROR"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": true,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
 			"folders":
 			[
 				{
-					"path": "/opt/servers/jboss-4.2.3.GA"
+					"path": "/home/italo/workspaces"
 				}
 			],
 			"groups":
 			[
 				{
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/opt/servers/jboss-4.2.3.GA/bin/run.conf",
+							"file": "/home/italo/workspaces/snippets/DataConnection.java",
 							"settings":
 							{
-								"buffer_size": 2092,
+								"buffer_size": 11664,
 								"regions":
 								{
 								},
@@ -292,7 +317,7 @@
 								],
 								"settings":
 								{
-									"syntax": "Packages/Text/Plain text.tmLanguage"
+									"syntax": "Packages/Java/Java.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -302,10 +327,36 @@
 						},
 						{
 							"buffer": 1,
-							"file": "/opt/servers/production/jboss-4.2.3.GA/server/default/conf/jboss-service.xml",
+							"file": "/home/italo/workspaces/snippets/dto-config.xml",
 							"settings":
 							{
-								"buffer_size": 37302,
+								"buffer_size": 624,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										624,
+										624
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/XML/XML.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/home/italo/workspaces/vivere/vivere-tools.teste/src/main/java/com/viverebrasil/applications/services/login/UserPrincipal.java",
+							"settings":
+							{
+								"buffer_size": 691,
 								"regions":
 								{
 								},
@@ -318,7 +369,7 @@
 								],
 								"settings":
 								{
-									"syntax": "Packages/XML/XML.tmLanguage"
+									"syntax": "Packages/Java/Java.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -331,11 +382,11 @@
 			],
 			"incremental_find":
 			{
-				"height": 0.0
+				"height": 36.0
 			},
 			"input":
 			{
-				"height": 0.0
+				"height": 35.0
 			},
 			"layout":
 			{
@@ -386,9 +437,9 @@
 			"show_open_files": true,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 263.0,
+			"side_bar_width": 249.0,
 			"status_bar_visible": true,
-			"window_id": 5,
+			"window_id": 6,
 			"workspace_name": ""
 		}
 	],

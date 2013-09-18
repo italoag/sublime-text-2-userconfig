@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require "rubygems"
+require "rdoc/markup"
+require "rdoc/markup/to_html"
+
+rdoc = RDoc::Markup::ToHtml.new
+puts rdoc.convert(STDIN.read)
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^~@p</string>
+	<key>name</key>
+	<string>Preview</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>text.rdoc</string>
+	<key>uuid</key>
+	<string>E1184BEF-8CEE-4D20-9FB4-C7DBA9EDD5DB</string>
+</dict>
+</plist>
