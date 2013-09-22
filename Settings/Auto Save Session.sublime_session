@@ -1,6 +1,7 @@
 {
 	"folder_history":
 	[
+		"/Users/italoamorim/Projects",
 		"/Users/italoamorim/Development/Training/Scala"
 	],
 	"last_window_id": 192,
@@ -404,28 +405,22 @@
 			"buffers":
 			[
 				{
+					"contents": "Quiz: Queries with Dot Notation\n\nSuppose a simple e-commerce product catalog called catalog with documents that look like this:\n\n{ product : \"Super Duper-o-phonic\", \n  price : 100000000000,\n  reviews : [ { user : \"fred\", comment : \"Great!\" , rating : 5 },\n              { user : \"tom\" , comment : \"I agree with Fred, somewhat!\" , rating : 4 } ],\n  ... }\n\nSolution:\ndb.catalog.find( { price : { $gt : 10000 } , \"reviews.rating\" : { $gte : 5 } } )\n\n\n",
+					"file": "/Users/italoamorim/Development/Training/M101P/learning.json",
+					"file_size": 81,
+					"file_write_time": 1379822504000000,
+					"settings":
+					{
+						"buffer_size": 448,
+						"line_ending": "Unix"
+					}
+				},
+				{
 					"file": "/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.postinst",
 					"settings":
 					{
 						"buffer_size": 8643,
 						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-					"settings":
-					{
-						"buffer_size": 13149,
-						"line_ending": "Unix"
-					}
-				},
-				{
-					"file": "/Users/italoamorim/Development/Training/M101P/learning.json",
-					"settings":
-					{
-						"buffer_size": 81,
-						"line_ending": "Unix",
-						"name": "db.catalog.find( { price : { $gt : 10000 } , \"revi"
 					}
 				}
 			],
@@ -469,6 +464,9 @@
 			},
 			"file_history":
 			[
+				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.postinst",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/Users/italoamorim/Development/Training/M101P/learning.json",
 				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
 				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.config",
 				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.dirs",
@@ -593,10 +591,7 @@
 				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_product_index_enbl_tmp.sql",
 				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_bundle_option.sql",
 				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_eav_attribute.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_product_index_idx.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_product_index_tmp.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_compare_item.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_index_eav_decimal_tmp.sql"
+				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_product_index_idx.sql"
 			],
 			"find":
 			{
@@ -701,32 +696,37 @@
 				"whole_word": false,
 				"wrap": true
 			},
+			"folders":
+			[
+				{
+					"path": "/Users/italoamorim/Projects"
+				}
+			],
 			"groups":
 			[
 				{
-					"selected": 1,
+					"selected": 0,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.postinst",
+							"file": "/Users/italoamorim/Development/Training/M101P/learning.json",
 							"settings":
 							{
-								"buffer_size": 8643,
+								"buffer_size": 448,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										2660,
-										2660
+										447,
+										447
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage",
-									"translate_tabs_to_spaces": false
+									"syntax": "Packages/JavaScript/JSON.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -736,10 +736,10 @@
 						},
 						{
 							"buffer": 1,
-							"file": "/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+							"file": "/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.postinst",
 							"settings":
 							{
-								"buffer_size": 13149,
+								"buffer_size": 8643,
 								"regions":
 								{
 								},
@@ -752,34 +752,7 @@
 								],
 								"settings":
 								{
-									"syntax": "Packages/JavaScript/JSON.tmLanguage"
-								},
-								"translation.x": 0.0,
-								"translation.y": 0.0,
-								"zoom_level": 1.0
-							},
-							"type": "text"
-						},
-						{
-							"buffer": 2,
-							"file": "/Users/italoamorim/Development/Training/M101P/learning.json",
-							"settings":
-							{
-								"buffer_size": 81,
-								"regions":
-								{
-								},
-								"selection":
-								[
-									[
-										81,
-										81
-									]
-								],
-								"settings":
-								{
-									"auto_name": "db.catalog.find( { price : { $gt : 10000 } , \"revi",
-									"syntax": "Packages/JavaScript/JSON.tmLanguage"
+									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -851,7 +824,7 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 137.0,
+			"side_bar_width": 165.0,
 			"status_bar_visible": true,
 			"window_id": 187,
 			"workspace_name": ""
