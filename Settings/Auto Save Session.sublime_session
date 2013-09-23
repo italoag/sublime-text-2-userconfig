@@ -1,10 +1,11 @@
 {
 	"folder_history":
 	[
+		"/Users/italoamorim/Development",
 		"/Users/italoamorim/Projects",
 		"/Users/italoamorim/Development/Training/Scala"
 	],
-	"last_window_id": 192,
+	"last_window_id": 196,
 	"settings":
 	{
 		"new_window_height": 991.0,
@@ -14,6 +15,10 @@
 			{
 				"selected_items":
 				[
+					[
+						"ty",
+						"type"
+					],
 					[
 						"bb",
 						"bbdir"
@@ -39,9 +44,21 @@
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 392.0,
+				"height": 49.0,
 				"selected_items":
 				[
+					[
+						"terminal",
+						"Open in terminal"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"Instl",
+						"Package Control: Install Package"
+					],
 					[
 						"",
 						"Ensime: Build"
@@ -53,13 +70,9 @@
 					[
 						"Install ",
 						"Package Control: Install Package"
-					],
-					[
-						"Package Control: ",
-						"Package Control: Install Package"
 					]
 				],
-				"width": 449.0
+				"width": 435.0
 			},
 			"console":
 			{
@@ -76,7 +89,38 @@
 			},
 			"file_history":
 			[
-				"/Users/italoamorim/Education/CS169.2x - Software as a Service/util.py",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/backspace.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/backtab.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/callback.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/cmd.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/ctrl.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/debugger.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/def-initialize.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/delete.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/down.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/enter.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/esc.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/File_expand_path.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/iife.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/left.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/module-js.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/option.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/require_File_expand_path.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/return.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/right.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/separator.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/shift.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/tab.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/up.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Troubleshooter/var-function.sublime-snippet",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/create_student_collection.js",
+				"/Users/italoamorim/Development/Training/M101P/learning.json",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/User/MacTerminal.sublime-settings",
+				"/Users/italoamorim/Development/Training/M101P/Week2/create_school.js",
+				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.postinst",
+				"/Users/italoamorim/Development/Training/M101P/Week2/grades.ef42a2b3e7ff.js",
 				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.config",
 				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.dirs",
 				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer-archive.mime",
@@ -172,38 +216,7 @@
 				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_entity.sql",
 				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_anc_products_index_tmp.sql",
 				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_entity_datetime.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_entity_decimal.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_entity_varchar.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_entity_int.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_entity_text.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_index_price_bundle_tmp.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_bundle_selection.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_bundle_selection_price.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_bundle_stock_index.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_enabled_index.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_entity.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_entity_datetime.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_entity_decimal.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_entity_gallery.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_entity_group_price.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_entity_int.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_index_price_bundle_sel_idx.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_index_eav_idx.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_index_eav_tmp.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_index_group_price.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_index_price.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_index_price_bundle_idx.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_index_price_bundle_opt_tmp.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_bundle_price_index.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_product_index_enbl_idx.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_bundle_option_value.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_product_index_enbl_tmp.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_bundle_option.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_eav_attribute.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_product_index_idx.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_product_index_tmp.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_compare_item.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_index_eav_decimal_tmp.sql"
+				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_entity_decimal.sql"
 			],
 			"find":
 			{
@@ -341,7 +354,7 @@
 			"menu_visible": true,
 			"output.exec":
 			{
-				"height": 393.0
+				"height": 296.0
 			},
 			"replace":
 			{
@@ -368,7 +381,7 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 137.0,
+			"side_bar_width": 279.0,
 			"status_bar_visible": true
 		},
 		"new_window_width": 1920.0
@@ -380,6 +393,10 @@
 			{
 				"selected_items":
 				[
+					[
+						"ty",
+						"type"
+					],
 					[
 						"bb",
 						"bbdir"
@@ -405,31 +422,72 @@
 			"buffers":
 			[
 				{
-					"contents": "Quiz: Queries with Dot Notation\n\nSuppose a simple e-commerce product catalog called catalog with documents that look like this:\n\n{ product : \"Super Duper-o-phonic\", \n  price : 100000000000,\n  reviews : [ { user : \"fred\", comment : \"Great!\" , rating : 5 },\n              { user : \"tom\" , comment : \"I agree with Fred, somewhat!\" , rating : 4 } ],\n  ... }\n\nSolution:\ndb.catalog.find( { price : { $gt : 10000 } , \"reviews.rating\" : { $gte : 5 } } )\n\n\n",
-					"file": "/Users/italoamorim/Development/Training/M101P/learning.json",
-					"file_size": 81,
-					"file_write_time": 1379822504000000,
+					"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/using_find.py",
 					"settings":
 					{
-						"buffer_size": 448,
-						"line_ending": "Unix"
+						"buffer_size": 790,
+						"line_ending": "Windows"
 					}
 				},
 				{
-					"file": "/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.postinst",
+					"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/read_reddit.py",
 					"settings":
 					{
-						"buffer_size": 8643,
-						"line_ending": "Unix"
+						"buffer_size": 532,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/using_regex.py",
+					"settings":
+					{
+						"buffer_size": 598,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/using_find_and_modify.py",
+					"settings":
+					{
+						"buffer_size": 671,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/using_find_with_selector.py",
+					"settings":
+					{
+						"buffer_size": 840,
+						"line_ending": "Windows"
+					}
+				},
+				{
+					"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/using_dot_notation.py",
+					"settings":
+					{
+						"buffer_size": 610,
+						"line_ending": "Windows"
 					}
 				}
 			],
 			"build_system": "",
 			"command_palette":
 			{
-				"height": 392.0,
+				"height": 49.0,
 				"selected_items":
 				[
+					[
+						"terminal",
+						"Open in terminal"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"Instl",
+						"Package Control: Install Package"
+					],
 					[
 						"",
 						"Ensime: Build"
@@ -441,13 +499,9 @@
 					[
 						"Install ",
 						"Package Control: Install Package"
-					],
-					[
-						"Package Control: ",
-						"Package Control: Install Package"
 					]
 				],
-				"width": 449.0
+				"width": 435.0
 			},
 			"console":
 			{
@@ -464,10 +518,14 @@
 			},
 			"file_history":
 			[
-				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.postinst",
+				"/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/create_student_collection.js",
 				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-				"/Users/italoamorim/Development/Training/M101P/learning.json",
 				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+				"/Users/italoamorim/Development/Training/M101P/learning.json",
+				"/Users/italoamorim/Library/Application Support/Sublime Text 2/Packages/User/MacTerminal.sublime-settings",
+				"/Users/italoamorim/Development/Training/M101P/Week2/create_school.js",
+				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.postinst",
+				"/Users/italoamorim/Development/Training/M101P/Week2/grades.ef42a2b3e7ff.js",
 				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.config",
 				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.dirs",
 				"/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer-archive.mime",
@@ -587,11 +645,7 @@
 				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_index_price_bundle_opt_tmp.sql",
 				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_bundle_price_index.sql",
 				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_product_index_enbl_idx.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_bundle_option_value.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_product_index_enbl_tmp.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_bundle_option.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_eav_attribute.sql",
-				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_category_product_index_idx.sql"
+				"/Users/italoamorim/Dumps/lovit/welovit_ecommercedb_catalog_product_bundle_option_value.sql"
 			],
 			"find":
 			{
@@ -699,34 +753,34 @@
 			"folders":
 			[
 				{
-					"path": "/Users/italoamorim/Projects"
+					"path": "/Users/italoamorim/Development"
 				}
 			],
 			"groups":
 			[
 				{
-					"selected": 0,
+					"selected": 5,
 					"sheets":
 					[
 						{
 							"buffer": 0,
-							"file": "/Users/italoamorim/Development/Training/M101P/learning.json",
+							"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/using_find.py",
 							"settings":
 							{
-								"buffer_size": 448,
+								"buffer_size": 790,
 								"regions":
 								{
 								},
 								"selection":
 								[
 									[
-										447,
-										447
+										786,
+										786
 									]
 								],
 								"settings":
 								{
-									"syntax": "Packages/JavaScript/JSON.tmLanguage"
+									"syntax": "Packages/Python/Python.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -736,10 +790,62 @@
 						},
 						{
 							"buffer": 1,
-							"file": "/Users/italoamorim/Development/installer/jdk7-installer/debian/oracle-java7-installer.postinst",
+							"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/read_reddit.py",
 							"settings":
 							{
-								"buffer_size": 8643,
+								"buffer_size": 532,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										532,
+										532
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Python/Python.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 2,
+							"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/using_regex.py",
+							"settings":
+							{
+								"buffer_size": 598,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										305,
+										305
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Python/Python.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 3,
+							"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/using_find_and_modify.py",
+							"settings":
+							{
+								"buffer_size": 671,
 								"regions":
 								{
 								},
@@ -752,7 +858,59 @@
 								],
 								"settings":
 								{
-									"syntax": "Packages/ShellScript/Shell-Unix-Generic.tmLanguage"
+									"syntax": "Packages/Python/Python.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 0.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 4,
+							"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/using_find_with_selector.py",
+							"settings":
+							{
+								"buffer_size": 840,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										294,
+										294
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Python/Python.tmLanguage"
+								},
+								"translation.x": 0.0,
+								"translation.y": 142.0,
+								"zoom_level": 1.0
+							},
+							"type": "text"
+						},
+						{
+							"buffer": 5,
+							"file": "/Users/italoamorim/Development/Training/M101P/Week2/lesson_files/using_dot_notation.py",
+							"settings":
+							{
+								"buffer_size": 610,
+								"regions":
+								{
+								},
+								"selection":
+								[
+									[
+										195,
+										195
+									]
+								],
+								"settings":
+								{
+									"syntax": "Packages/Python/Python.tmLanguage"
 								},
 								"translation.x": 0.0,
 								"translation.y": 0.0,
@@ -796,7 +954,7 @@
 			"menu_visible": true,
 			"output.exec":
 			{
-				"height": 393.0
+				"height": 296.0
 			},
 			"position": "0 45 1920 1013 0 0 1920 1058 ",
 			"replace":
@@ -824,7 +982,7 @@
 			"show_open_files": false,
 			"show_tabs": true,
 			"side_bar_visible": true,
-			"side_bar_width": 165.0,
+			"side_bar_width": 279.0,
 			"status_bar_visible": true,
 			"window_id": 187,
 			"workspace_name": ""
